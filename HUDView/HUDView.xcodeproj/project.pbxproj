@@ -12,6 +12,9 @@
 		6520E5C42577D48C0042F2CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6520E5C22577D48C0042F2CA /* Main.storyboard */; };
 		6520E5C62577D4910042F2CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6520E5C52577D4910042F2CA /* Assets.xcassets */; };
 		6520E5C92577D4910042F2CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6520E5C72577D4910042F2CA /* LaunchScreen.storyboard */; };
+		6520E5D22577D5290042F2CA /* HUDView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6520E5D02577D5290042F2CA /* HUDView.xib */; };
+		6520E5D32577D5290042F2CA /* HUDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6520E5D12577D5290042F2CA /* HUDView.swift */; };
+		6520E5D52577DE340042F2CA /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6520E5D42577DE340042F2CA /* NibLoadable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		6520E5C52577D4910042F2CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6520E5C82577D4910042F2CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6520E5CA2577D4910042F2CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6520E5D02577D5290042F2CA /* HUDView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HUDView.xib; sourceTree = "<group>"; };
+		6520E5D12577D5290042F2CA /* HUDView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUDView.swift; sourceTree = "<group>"; };
+		6520E5D42577DE340042F2CA /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,9 @@
 			children = (
 				6520E5BC2577D48C0042F2CA /* AppDelegate.swift */,
 				6520E5C02577D48C0042F2CA /* ViewController.swift */,
+				6520E5D12577D5290042F2CA /* HUDView.swift */,
+				6520E5D02577D5290042F2CA /* HUDView.xib */,
+				6520E5D42577DE340042F2CA /* NibLoadable.swift */,
 				6520E5C22577D48C0042F2CA /* Main.storyboard */,
 				6520E5C52577D4910042F2CA /* Assets.xcassets */,
 				6520E5C72577D4910042F2CA /* LaunchScreen.storyboard */,
@@ -122,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6520E5D22577D5290042F2CA /* HUDView.xib in Resources */,
 				6520E5C92577D4910042F2CA /* LaunchScreen.storyboard in Resources */,
 				6520E5C62577D4910042F2CA /* Assets.xcassets in Resources */,
 				6520E5C42577D48C0042F2CA /* Main.storyboard in Resources */,
@@ -135,6 +145,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6520E5D32577D5290042F2CA /* HUDView.swift in Sources */,
+				6520E5D52577DE340042F2CA /* NibLoadable.swift in Sources */,
 				6520E5C12577D48C0042F2CA /* ViewController.swift in Sources */,
 				6520E5BD2577D48C0042F2CA /* AppDelegate.swift in Sources */,
 			);
