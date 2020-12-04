@@ -18,14 +18,16 @@ class ViewController: UIViewController {
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        animateOnWindow()
+        //animateOnWindow()
+        hudView = HUDView.init(frame: CGRect(x: 100, y: -100, width: 100, height: 100))
+
+        HUD.show(hudView)
     }
 
     func animateOnWindow() {
         guard hudView == nil else { return }
 
-        let delegate = UIApplication.shared.delegate as? AppDelegate
-        let window = delegate?.window
+        let window = UIApplication.shared.windows.filter {$0.isKeyWindow}.first
         hudView = HUDView.init(frame: CGRect(x: 100, y: -100, width: 100, height: 100))
         window?.addSubview(hudView!)
 

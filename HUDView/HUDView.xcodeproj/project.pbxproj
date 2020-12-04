@@ -15,7 +15,35 @@
 		6520E5D22577D5290042F2CA /* HUDView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6520E5D02577D5290042F2CA /* HUDView.xib */; };
 		6520E5D32577D5290042F2CA /* HUDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6520E5D12577D5290042F2CA /* HUDView.swift */; };
 		6520E5D52577DE340042F2CA /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6520E5D42577DE340042F2CA /* NibLoadable.swift */; };
+		D42C64C12579D46C00BFC9F2 /* HUD.h in Headers */ = {isa = PBXBuildFile; fileRef = D42C64BF2579D46C00BFC9F2 /* HUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D42C64C42579D46C00BFC9F2 /* HUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D42C64BD2579D46C00BFC9F2 /* HUD.framework */; };
+		D42C64C52579D46C00BFC9F2 /* HUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D42C64BD2579D46C00BFC9F2 /* HUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D42C64CC2579D48600BFC9F2 /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42C64CB2579D48600BFC9F2 /* HUD.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D42C64C22579D46C00BFC9F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6520E5B12577D48C0042F2CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D42C64BC2579D46C00BFC9F2;
+			remoteInfo = HUD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D42C64C62579D46C00BFC9F2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D42C64C52579D46C00BFC9F2 /* HUD.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6520E5B92577D48C0042F2CA /* HUDView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HUDView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,10 +56,22 @@
 		6520E5D02577D5290042F2CA /* HUDView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HUDView.xib; sourceTree = "<group>"; };
 		6520E5D12577D5290042F2CA /* HUDView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUDView.swift; sourceTree = "<group>"; };
 		6520E5D42577DE340042F2CA /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		D42C64BD2579D46C00BFC9F2 /* HUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D42C64BF2579D46C00BFC9F2 /* HUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HUD.h; sourceTree = "<group>"; };
+		D42C64C02579D46C00BFC9F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D42C64CB2579D48600BFC9F2 /* HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6520E5B62577D48C0042F2CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D42C64C42579D46C00BFC9F2 /* HUD.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D42C64BA2579D46C00BFC9F2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				6520E5BB2577D48C0042F2CA /* HUDView */,
+				D42C64BE2579D46C00BFC9F2 /* HUD */,
 				6520E5BA2577D48C0042F2CA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				6520E5B92577D48C0042F2CA /* HUDView.app */,
+				D42C64BD2579D46C00BFC9F2 /* HUD.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +102,7 @@
 		6520E5BB2577D48C0042F2CA /* HUDView */ = {
 			isa = PBXGroup;
 			children = (
+				D42C64CB2579D48600BFC9F2 /* HUD.swift */,
 				6520E5BC2577D48C0042F2CA /* AppDelegate.swift */,
 				6520E5C02577D48C0042F2CA /* ViewController.swift */,
 				6520E5D12577D5290042F2CA /* HUDView.swift */,
@@ -73,7 +116,27 @@
 			path = HUDView;
 			sourceTree = "<group>";
 		};
+		D42C64BE2579D46C00BFC9F2 /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				D42C64BF2579D46C00BFC9F2 /* HUD.h */,
+				D42C64C02579D46C00BFC9F2 /* Info.plist */,
+			);
+			path = HUD;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D42C64B82579D46C00BFC9F2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D42C64C12579D46C00BFC9F2 /* HUD.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		6520E5B82577D48C0042F2CA /* HUDView */ = {
@@ -83,15 +146,35 @@
 				6520E5B52577D48C0042F2CA /* Sources */,
 				6520E5B62577D48C0042F2CA /* Frameworks */,
 				6520E5B72577D48C0042F2CA /* Resources */,
+				D42C64C62579D46C00BFC9F2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D42C64C32579D46C00BFC9F2 /* PBXTargetDependency */,
 			);
 			name = HUDView;
 			productName = HUDView;
 			productReference = 6520E5B92577D48C0042F2CA /* HUDView.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D42C64BC2579D46C00BFC9F2 /* HUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D42C64C92579D46C00BFC9F2 /* Build configuration list for PBXNativeTarget "HUD" */;
+			buildPhases = (
+				D42C64B82579D46C00BFC9F2 /* Headers */,
+				D42C64B92579D46C00BFC9F2 /* Sources */,
+				D42C64BA2579D46C00BFC9F2 /* Frameworks */,
+				D42C64BB2579D46C00BFC9F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HUD;
+			productName = HUD;
+			productReference = D42C64BD2579D46C00BFC9F2 /* HUD.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -105,6 +188,9 @@
 				TargetAttributes = {
 					6520E5B82577D48C0042F2CA = {
 						CreatedOnToolsVersion = 11.7;
+					};
+					D42C64BC2579D46C00BFC9F2 = {
+						CreatedOnToolsVersion = 12.1;
 					};
 				};
 			};
@@ -122,6 +208,7 @@
 			projectRoot = "";
 			targets = (
 				6520E5B82577D48C0042F2CA /* HUDView */,
+				D42C64BC2579D46C00BFC9F2 /* HUD */,
 			);
 		};
 /* End PBXProject section */
@@ -138,6 +225,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D42C64BB2579D46C00BFC9F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -146,13 +240,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				6520E5D32577D5290042F2CA /* HUDView.swift in Sources */,
+				D42C64CC2579D48600BFC9F2 /* HUD.swift in Sources */,
 				6520E5D52577DE340042F2CA /* NibLoadable.swift in Sources */,
 				6520E5C12577D48C0042F2CA /* ViewController.swift in Sources */,
 				6520E5BD2577D48C0042F2CA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D42C64B92579D46C00BFC9F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D42C64C32579D46C00BFC9F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D42C64BC2579D46C00BFC9F2 /* HUD */;
+			targetProxy = D42C64C22579D46C00BFC9F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6520E5C22577D48C0042F2CA /* Main.storyboard */ = {
@@ -324,6 +434,64 @@
 			};
 			name = Release;
 		};
+		D42C64C72579D46C00BFC9F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8Y7626TS68;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HUD/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tecpal.HUD;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D42C64C82579D46C00BFC9F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8Y7626TS68;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HUD/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tecpal.HUD;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -341,6 +509,15 @@
 			buildConfigurations = (
 				6520E5CE2577D4910042F2CA /* Debug */,
 				6520E5CF2577D4910042F2CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D42C64C92579D46C00BFC9F2 /* Build configuration list for PBXNativeTarget "HUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D42C64C72579D46C00BFC9F2 /* Debug */,
+				D42C64C82579D46C00BFC9F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
