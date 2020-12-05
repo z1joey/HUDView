@@ -14,6 +14,8 @@ typealias ButtonActionBlock = (() -> Void)
 class HUDView: UIView, NibLoadable {
     @IBOutlet weak var button: UIButton!
 
+    var backgroundView: UIView?
+
     private var buttonActionBlock: ButtonActionBlock?
 
     init(buttonAction: ButtonActionBlock?) {
@@ -42,22 +44,33 @@ class HUDView: UIView, NibLoadable {
         guard let window = UIApplication.shared.windows.filter({$0.isKeyWindow}).first else { return }
         guard window.subviews.contains(where: { $0 is HUDView}) == false else { return }
 
+        if backgroundView != nil {
+            backgroundView!.frame = window.bounds
+            backgroundView!.alpha = 0
+            window.addSubview(backgroundView!)
+        }
+
         frame.origin.y = -frame.height
         window.addSubview(self)
         
-        UIView.animate(withDuration: 1) {
+        UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, animations: {
+            self.backgroundView?.alpha = 0.5
             self.center = window.center
-        }
+        }, completion: { _ in
+            print("job done")
+        })
     }
 
     static func dismiss() {
         guard let window = UIApplication.shared.windows.filter({$0.isKeyWindow}).first else { return }
         guard let hudView = window.subviews.first(where: { $0 is HUDView }) else { return }
 
-        UIView.animate(withDuration: 1, animations: {
+        UIView.animate(withDuration: 0.2, animations: {
             hudView.frame.origin.y = -hudView.frame.height
+            (hudView as? HUDView)?.backgroundView?.alpha = 0
         }, completion: { _ in
             hudView.removeFromSuperview()
+            (hudView as? HUDView)?.backgroundView?.removeFromSuperview()
         })
     }
 }

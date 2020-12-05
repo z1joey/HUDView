@@ -17,9 +17,17 @@ class ViewController: UIViewController {
     }
 
     @IBAction func showAction(_ sender: Any) {
-        HUDView(buttonAction: {
+        let hud = HUDView(buttonAction: {
+            HUDView.dismiss()
             print("hahaha")
-        }).show()
+        })
+
+        let blackView = UIView()
+        blackView.backgroundColor = .black
+        blackView.alpha = 0.5
+
+        hud.backgroundView = blackView
+        hud.show()
     }
 
     @IBAction func dismissAction(_ sender: Any) {
